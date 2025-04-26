@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>سامانه رزومه اساتید دانشگاه دامغان</title>
+        <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="output.css">
+    </head>
+<body dir="rtl" class="font-vazir bg-background">
+    
+    <header class="bg-primary w-full text-white px-6 py-4 md:py-0">
+        <div class="flex items-center justify-between">
+         
+      
+          <!-- دکمه منو در موبایل -->
+          <button id="menu-btn" class="text-3xl md:hidden focus:outline-none">
+            ☰
+          </button>
+      
+          <!-- منوی دسکتاپ -->
+          <ul class="hidden md:flex justify-between gap-2 text-white ">
+            <li><a href="" class="menu-link ">خانه</a></li>
+            <li><a href="#prof-list" class="menu-link">اساتید</a></li>
+            <li><a href="" class="menu-link">درباره ما</a></li>
+            <li><a href="#contact-us" class="menu-link">تماس با ما</a></li>
+          </ul>
+
+           <!-- لوگو -->
+           <img src="images/logo.png" alt="damghan-uni-logo" class="max-h-20 md:max-h-32">
+        </div>
+      
+        <!-- منوی موبایل (پیش‌فرض مخفی) -->
+        <ul id="mobile-menu" class="hidden flex-col  gap-8 mt-4 text-base font-medium md:hidden animate-slide-down bg-primaryLight rounded-lg p-4">
+          <li><a href="" class="mobile-link">خانه</a></li>
+          <li><a href="#prof-list" class="mobile-link">اساتید</a></li>
+          <li><a href="" class="mobile-link">درباره ما</a></li>
+          <li><a href="#contact-us" class="mobile-link">تماس با ما</a></li>
+        </ul>
+      </header>
+      
+
+    <main>
+        <section class="my-4">
+            <img src="images/banner.jpg" alt="damghan-banner" class="h-[400px] min-w-full object-cover">
+        </section>
+
+        
+        <section class="flex justify-center gap-4 bg-primaryLight min-h-8 py-6 my-4">
+            <input type="text" placeholder="جستوجو نام استاد"  class="px-4 py-2 rounded-full w-1/4 text-sm focus:outline-accent hover:ring hover:ring-accent">
+            <select name="" id="" class="px-4 py-2 rounded-full text-sm focus:outline-accent hover:ring hover:ring-accent">
+                <option value="">همه دپارتمان‌ها</option>
+                <option value="ریاضی">ریاضی</option>
+                <option value="مهندسی کامپیوتر">مهندسی کامپیوتر</option>
+                <option value="فیزیک">فیزیک</option>
+            </select>
+            <button class="px-6 py-2 bg-primary text-white rounded-xl hover:bg-primaryDark transition">
+                جست‌وجو        
+            </button>
+        </section>
+
+
+
+        <section id="prof-list" class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-9  justify-items-center  mt-14">
+
+            <div class="prof-card">
+                <img src="images/user-icon.jpg" class="prof-img" />
+                <h2 class=" prof-name">نام استاد</h2>
+                <p class="prof-rank">مرتبه استاد، رشته</p>
+                <a href="prof-profile/profile.html" class="show-profile">نمایش پروفایل</a>
+            </div>
+              
+
+            <div class="prof-card">
+                <img src="images/user-icon.jpg" alt="prof-image" class="prof-img">
+                <h2 class="prof-name">نام استاد</h2>
+                <p class="prof-rank">مرتبه استاد، رشته</p>
+                <a href="prof-profile/profile.html" class="show-profile">نمایش پروفایل</a>
+            </div>
+            <div class="prof-card">
+                <img src="images/user-icon.jpg" alt="prof-image" class="prof-img">
+                <h2 class="prof-name">نام استاد</h2>
+                <p class="prof-rank">مرتبه استاد، رشته</p>
+                <a href="prof-profile/profile.html" class="show-profile">نمایش پروفایل</a>
+            </div>
+            <div class="prof-card">
+                <img src="images/user-icon.jpg" alt="prof-image" class="prof-img">
+                <h2 class="prof-name">نام استاد</h2>
+                <p class="prof-rank">مرتبه استاد، رشته</p>
+                <a href="prof-profile/profile.html" class="show-profile">نمایش پروفایل</a>
+            </div>
+            <div class="prof-card">
+                <img src="images/user-icon.jpg" alt="prof-image" class="prof-img">
+                <h2 class="prof-name">نام استاد</h2>
+                <p class="prof-rank">مرتبه استاد، رشته</p>
+                <a href="prof-profile/profile.html" class="show-profile">نمایش پروفایل</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer ">
+        
+        <div class="container grid  md:grid-cols-3 justify-items-center items-center  max-w-full divide-y-4 divide-primaryLight/25 md:divide-y-0">
+
+
+            <div id="contact-us" class="py-5 md:py-0 ">
+                <address >
+                    <p >آدرس: دامغان، میدان دانشگاه</p>
+                    <p>تلفن: ۰۲۳۳۵۲۲۴۰۰۰</p>
+                    <p>ایمیل: info@du.ac.ir</p>
+                </address>
+            </div>
+    
+            <div class="flex flex-col items-center gap-y-6 py-5 md:py-0" >
+                <img src="images/Damghan-University.jpg" alt="" class="max-h-32  rounded-lg border-2">
+                <div class="flex gap-6 text-small">
+                    <a href="" class="hover:text-accent">اینستاگرام</a>
+                    <a href="" class="hover:text-accent">بله</a>
+                    <a href="" class="hover:text-accent">ایتا</a>
+                </div>
+            </div>
+            
+            <div class="py-5 md:py-0">
+                <iframe class="w-full h-60 rounded-lg shadow-md"  src="https://www.openstreetmap.org/export/embed.html?bbox=54.31666374206543%2C36.16339650822463%2C54.3331003189087%2C36.17354747018086&amp;layer=mapnik" style="border: 1px solid black">
+                </iframe>
+                <br/>
+                <small class="block text-center mt-2">
+                    <a href="https://www.openstreetmap.org/?#map=16/36.16847/54.32488" target="_blank" class="text-accent underline">نمایش نقشه بزرگ‌تر</a>
+                </small>            
+            </div>
+        </div>
+       
+    </footer>
+</body>
+
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+</html>
