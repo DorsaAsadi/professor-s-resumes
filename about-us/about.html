@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درباره ما- دانشگاه دامغان</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../output.css">
+</head>
+<body dir="rtl" class="font-vazir bg-background">
+
+    <header class="bg-primary w-full text-white px-6 py-4 md:py-0">
+        <div class="flex items-center justify-between">
+         
+      
+          <!-- دکمه منو در موبایل -->
+          <button id="menu-btn" class="text-3xl md:hidden focus:outline-none">
+            ☰
+          </button>
+      
+          <!-- منوی دسکتاپ -->
+          <ul class="hidden md:flex justify-between gap-2 text-white ">
+            <li><a href="https://du.ac.ir/" class="menu-link ">خانه</a></li>
+            <li><a href="../index.html" class="menu-link">اساتید</a></li>
+            <li><a href="about.html" class="menu-link">درباره ما</a></li>
+            <li><a href="../index.html#contact-us" class="menu-link">تماس با ما</a></li>
+          </ul>
+
+           <!-- لوگو -->
+           <img src="../images/logo.png" alt="damghan-uni-logo" class="max-h-20 md:max-h-32">
+        </div>
+      
+        <!-- منوی موبایل (پیش‌فرض مخفی) -->
+        <ul id="mobile-menu" class="hidden flex-col  gap-8 mt-4 text-base font-medium md:hidden animate-slide-down bg-primaryLight rounded-lg p-4">
+          <li><a href="https://du.ac.ir/" class="mobile-link">خانه</a></li>
+          <li><a href="../index.html" class="mobile-link">اساتید</a></li>
+          <li><a href="about.html" class="mobile-link">درباره ما</a></li>
+          <li><a href="../index.html#contact-us" class="mobile-link">تماس با ما</a></li>
+        </ul>
+    
+    </header>
+
+
+    <main class="max-w-4xl mx-auto p-4 ">
+
+        <section >
+
+            <div class="slider-container w-full max-w-md mx-auto mb-5 relative overflow-hidden rounded-lg shadow-lg">
+                <img src="img1.jpg" alt="" id="slider-image" class="w-full h-64 object-cover transition-all duration-500">
+
+
+                 <!-- دکمه قبلی -->
+                <button id="prev-btn" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/70 px-2 py-1 rounded-full hover:bg-white transition">
+                    ›
+                </button>
+                
+                <!-- دکمه بعدی -->
+                <button id="next-btn" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/70 px-2 py-1 rounded-full hover:bg-white transition">
+                    ‹
+                </button>
+
+            </div>
+
+
+            <h2 class="text-2xl text-textPrimary font-bold mb-2">تاریخچه دانشگاه دامغان<h2>
+            <p>
+                دانشگاه دامغان یکی از دانشگاه‌های دولتی، رو‌به‌رشد و با سابقه در ایران است که در استان سمنان و شهر دامغان قرار دارد. این دانشگاه با رویکردی علمی، پژوهشی و فرهنگی در دهه‌های اخیر توانسته جایگاهی شایسته در میان دانشگاه‌های جوان کشور پیدا کند و امروز به عنوان یکی از مراکز فعال در تربیت نیروهای متخصص و متعهد شناخته می‌شود.
+                دانشگاه دامغان فعالیت خود را در سال ۱۳۷۱ با عنوان “مرکز آموزش عالی دامغان” آغاز کرد. با تلاش‌های صورت‌گرفته در حوزه توسعه علمی، جذب هیئت علمی مجرب و گسترش رشته‌ها، این مرکز در سال‌های بعد به یک دانشگاه دولتی مستقل تبدیل شد. اکنون دانشگاه دامغان با بیش از سه دهه فعالیت آموزشی و پژوهشی، به یکی از مراکز مهم آموزش عالی در منطقه تبدیل شده است.
+            </p>
+            
+            <h2 class="text-2xl text-textPrimary font-bold my-2">موقعیت جغرافیایی و فضای دانشگاه</h2>
+            <p>
+                دانشگاه دامغان در دامنه کویر و در شهر تاریخی دامغان واقع شده است؛ شهری که با داشتن تمدنی کهن، طبیعتی آرام و فاصله‌ای مناسب با تهران و مشهد، شرایطی ایده‌آل برای تحصیل و زندگی دانشجویی فراهم می‌آورد.
+                پردیس دانشگاه در حاشیه شهر قرار دارد و با دارا بودن ساختمان‌های آموزشی مدرن، آزمایشگاه‌ها، فضاهای فرهنگی و ورزشی، محیطی علمی، آرام و مجهز برای دانشجویان ایجاد کرده است.  
+            </p>
+
+            <h2 class=" text-2xl text-textPrimary font-bold my-2">دانشکده‌ها و رشته‌های تحصیلی</h2>
+            <p>
+                دانشگاه دامغان دارای چندین دانشکده فعال و رشته‌های متنوع در مقاطع کارشناسی، کارشناسی ارشد و دکتری است. دانشکده‌های اصلی این دانشگاه عبارت‌اند از:
+            </p>
+            <ul class="list-disc mr-8 mt-2 text-textLight space-y-2">
+                <li>دانشکده علوم زمین</li>
+                <li>دانشکده ریاضی و علوم کامپیوتر</li>
+                <li>دانشکده فیزیک</li>
+                <li>دانشکده زیست شناسی</li>
+                <li>دانشکده فنی و مهندسی</li>
+                <li>دانشکده هنر</li>
+                <li>دانشکده علوم انسانی</li>
+            </ul>
+        </section>
+
+        <div class="text-center mt-8">
+            <a href="../index.html" class="text-accent hover:underline">بازگشت به صفحه اصلی</a>
+        </div>
+    </main>
+    <footer class="bg-primaryLight text-center py-4 mt-8 text-sm">
+        <p>© 2025 دانشگاه دامغان - تمامی حقوق محفوظ است.</p>
+    </footer>
+    <script src="about.js"></script>
+</body>
+</html>

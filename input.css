@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .prof-card {
+      @apply bg-surface flex flex-col gap-2 items-center p-4 w-64;
+      @apply rounded-xl border-2 shadow-md ;
+      @apply hover:scale-105 hover:shadow-xl hover:shadow-primaryLight drop-shadow-2xl hover:duration-300 transition-transform duration-300  ease-in-out;
+
+    }
+
+    .prof-img{
+        @apply w-24 h-24 mx-auto shadow-md rounded-full border-2 mb-3 ;
+    }
+
+    .prof-name{
+        @apply text-lg font-bold text-center ;
+    }
+
+    .prof-rank{
+        @apply text-center text-sm text-gray-500;
+    }
+
+    .show-profile{
+        @apply block text-center mt-4 text-accent hover:underline hover:underline-offset-8 text-sm;
+    }
+
+    .profile-section{
+        @apply mx-6 md:mx-8 mb-8;
+    }
+
+    .resume-link{
+        @apply text-accent hover:underline hover:underline-offset-8;
+    }
+
+    .list-style-resume{
+        @apply text-textPrimary list-disc space-y-2 pr-8 ;
+    }
+
+    .resume-title{
+        @apply font-bold text-2xl border-b-4 pb-4 mb-4 text-primary;
+    }
+
+    .resume-banner{
+        @apply bg-primaryLight/50 flex flex-col md:flex-row items-center object-contain mb-10 gap-6 py-4 md:pr-6;
+    }
+
+    .resume-banner-title{
+        @apply text-sm text-gray-200;
+    }
+
+    .menu-link{
+        @apply  px-4 py-2 hover:bg-primaryLight hover:text-accent;
+        @apply hover:transition duration-300 ease-in-out rounded-md ;
+        
+    }
+    .mobile-link{
+        @apply  py-2  hover:text-accent;
+        @apply hover:transition duration-300 ease-in-out rounded-md hover:scale-110;
+    }
+
+
+    .footer{
+        @apply  border-t-4 border-primaryLight  mt-10 py-10  ;
+    }
+}
+
+
